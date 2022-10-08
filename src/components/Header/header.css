@@ -102,8 +102,7 @@
 	transition: transform 0.3s ease-out 0s, visibility 0s linear 0s;
 	transform: translate(0px);
 	visibility: visible;
-	/* position: fixed; */
-    position: absolute;
+	position: fixed;
 	top: -29px;
 	left: -20px;
 	display: block;
@@ -111,7 +110,7 @@
     width: 100vw;
 	background: rgb(255, 255, 255);
 	height: 100%;
-	z-index: 10;
+	z-index: 9000;
 	overflow-y: auto;
 	padding-bottom: 8rem;
 	max-width: 60rem;
