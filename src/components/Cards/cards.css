@@ -1,0 +1,105 @@
+.singleCard {
+    /* border: 1px solid red; */
+    max-width: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    background-color: transparent;
+	box-sizing: inherit;
+	text-align: left;
+	margin-bottom: 40px;
+    margin-bottom: 2.4rem;
+    color: #373737;
+    text-decoration: none;
+	/* margin-right: 32px; */
+}
+.singleCard img{
+    width: 100%;
+    object-fit: contain;
+
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    min-height: calc(((((100vw - 16rem) - 6.4rem) / 3) / 4) * 3);
+    border-style: none;
+    box-sizing: inherit;
+}
+.singleCard p{
+    padding-right: 10px;
+    font-family: "src/fonts/AktivGrotesk-Light.WOFF";
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin-top: 1.6rem;
+}
+.card-section{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto; */
+    padding-top: 60px;
+    padding-bottom: 60px;
+    /* overflow-x: hidden; */
+}
+.tiles-wrapper{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.tiles-wrapper .singleCard{
+    margin-top: 0px;
+}
+
+.singleCard h4{
+    font-weight: 300;
+    font-family: "src/fonts/Morion-Regular.WOFF";
+    font-size: 1.3rem;
+    line-height: 0.7rem;
+    margin-bottom: 0px;
+}
+.singleCard .content-box{
+    min-height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.singleCard .singleCard-cta{
+    margin-top: 1.9rem;
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+}
+.singleCard .singleCard-cta a{
+    font-family: "src/fonts/AktivGrotesk-Medium.WOFF";
+    font-size: 1rem;
+    text-decoration: underline;
+    line-height: 2rem;
+    font-weight:600;
+    text-underline-offset: 0.4rem; 
+    text-decoration-thickness: 0.2rem;
+}
+.singleCard .singleCard-cta a:hover{
+    color: rgb(250, 179, 0);
+}
+
+
+@media only screen and (min-width: 600px){
+    .tiles-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .singleCard {
+        max-width: 30%;
+        margin: auto;
+        box-sizing: border-box;
+        padding-right: 5px;
+    }
+    .singleCard img{
+        object-fit: cover;
+    }
+
+}
